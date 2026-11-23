@@ -1,0 +1,13 @@
+# Jednakowe końce wierszy na Windows, macOS i Linux
+* text=auto eol=lf
+
+# Pliki binarne
+*.ttf binary
+*.png binary
+*.jpg binary
+*.pdf binary
+*.zip binary
+
+# Plik zbudowany: bez zmiany końców wierszy i bez porównywania wiersz po wierszu
+prototype/partpark-prototyp.html -text -diff linguist-generated=true
+package-lock.json linguist-generated=true

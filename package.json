@@ -1,0 +1,25 @@
+{
+  "name": "partpark",
+  "version": "0.11.0",
+  "private": true,
+  "description": "PartPark — prototyp zapytań ofertowych na części zamienne z modelu 3D (projekt szkoleniowy)",
+  "license": "SEE LICENSE IN README.md",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "node prototype/scripts/build.js",
+    "test": "npm run build && npm run test:form && npm run test:flows && npm run test:layout",
+    "test:form": "node prototype/tests/form.test.js",
+    "test:flows": "node prototype/tests/flows.test.js",
+    "test:layout": "node prototype/tests/layout.test.js"
+  },
+  "dependencies": {
+    "jspdf": "2.5.1",
+    "jszip": "3.10.1",
+    "three": "0.128.0"
+  },
+  "devDependencies": {
+    "playwright": "1.63.0"
+  }
+}

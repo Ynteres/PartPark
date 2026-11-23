@@ -1,0 +1,22 @@
+# zależności
+node_modules/
+
+# wynik budowania (fragment strony do publikacji; plik samodzielny jest w repozytorium)
+prototype/dist/
+
+# sekrety i ustawienia lokalne
+.env
+.env.*
+!.env.example
+
+# wyniki testów i logi
+test-results/
+playwright-report/
+*.log
+
+# system i edytory
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
